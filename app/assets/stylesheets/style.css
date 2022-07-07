@@ -4,19 +4,25 @@
   --text-color: #434b54;
 }
 
+.bg-budget {
+  background-color: var(--main);
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: var(--main);
 }
 
-p.notice {
-  background-color: var(--text-color);
-  color: var(--second);
-}
-
-p.alert {
-  color: red;
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--second);
+  color: var(--text-color);
 }
 
 main.splash-screen {
@@ -61,6 +67,11 @@ button.login-btn {
   color: white;
 }
 
+button.sign-out {
+  background: none;
+  border: none;
+}
+
 main.auth-form {
   display: flex;
   flex-direction: column;
@@ -75,4 +86,57 @@ input#user_password_confirmation,
 input#user_password {
   padding: 10px;
   margin: 20px 0;
+}
+
+div.category-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.category-container {
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 2px solid var(--main);
+  text-decoration: none;
+}
+
+.category-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: flex-end;
+  background-color: aliceblue;
+  color: var(--text-color);
+}
+
+.category-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: flex-end;
+  padding: 0 20px;
+  color: var(--text-color);
+}
+
+.expense-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 20px;
+}
+
+p.alert {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+form.form-card {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
