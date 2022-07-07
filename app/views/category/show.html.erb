@@ -1,0 +1,17 @@
+<%= render 'layouts/navigation', title: "Expense", path: category_index_path %>
+<div class="expense-box">
+  <%= render 'layouts/category', item: @category %>
+  <h3>List of expenses</h3>
+  <% @expenses.each do |item| %>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><%= item.name %></h5>
+        <div >Price: $<%= item.amount %></div>
+        <i class="ml-3 text-muted"><%= item.created_at.strftime('%d %B %Y') %></i>
+      </div>
+    </div>
+
+  <% end %>
+</div>
+
+<%= render 'layouts/footer', title: "Add expense", path: new_payment_path %>
