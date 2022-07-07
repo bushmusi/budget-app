@@ -21,7 +21,7 @@ footer {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: var(--second);
+  background-color: var(--main);
   color: var(--text-color);
 }
 
