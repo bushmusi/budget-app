@@ -10,7 +10,7 @@ Budget-App is about building a mobile web application where you can manage your 
   - [budget-app](https://bush-budget.herokuapp.com/)
 
 # Screenshot
-  [Demo app](./app.png) [Expense app](./app-expense.png)
+  <img src = "./app.png" width ="200" /> <img src = "./app-expense.png" width ="200" />
 
 # Additional Tools
   1. Rubocop
