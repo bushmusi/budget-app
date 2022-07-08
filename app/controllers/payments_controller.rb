@@ -1,7 +1,6 @@
 class PaymentsController < ApplicationController
   before_action :current_category, :authenticate_user!
-  def index
-  end
+  def index; end
 
   def new
     @payment = Payment.new
