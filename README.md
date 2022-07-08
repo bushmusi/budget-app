@@ -9,6 +9,9 @@ Budget-App is about building a mobile web application where you can manage your 
 # Live Demo
   - [budget-app](https://bush-budget.herokuapp.com/)
 
+# Screenshot
+  [Demo app](./app.png) [Expense app](./app-expense.png)
+
 # Additional Tools
   1. Rubocop
   2. Stylelint
