@@ -7,7 +7,7 @@ Budget-App is about building a mobile web application where you can manage your 
  - Bootstrap 5
 
 # Live Demo
-  - [budget-app](localhost:3000)
+  - [budget-app](https://bush-budget.herokuapp.com/)
 
 # Additional Tools
   1. Rubocop

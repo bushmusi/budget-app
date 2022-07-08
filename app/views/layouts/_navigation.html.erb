@@ -1,0 +1,19 @@
+<% if user_signed_in? %>
+    <nav class="navbar bg-budget">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+            <% if !path.nil? %>
+                <%= link_to path, class: "sign-out" do %>
+                    <i class="fa fa-arrow-left fa-2x" style="color: white"></i>
+                <% end %>
+            <% end %>
+        </span>
+        <span class="navbar-brand mb-0 h1"><%= title %></span>
+        <span class="navbar-brand mb-0 h1">
+            <%= button_to destroy_user_session_path, :method => :delete, class: "sign-out" do %>
+            <i class="fa fa-sign-out fa-2x" style="color: white"></i>
+            <% end %>
+        </span>
+    </div>
+    </nav>
+<% end %>
