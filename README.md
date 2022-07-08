@@ -6,8 +6,15 @@ Budget-App is about building a mobile web application where you can manage your 
  - Ruby on Rails
  - Bootstrap 5
 
+# presentation
+
+- [loom link ](https://www.loom.com/share/01826d1d18be4c69bfa67a63671e3150)
+
 # Live Demo
   - [budget-app](https://bush-budget.herokuapp.com/)
+
+# Screenshots
+  <img src = "./app.png" width ="200" /> <img src = "./app-expense.png" width ="200" /> <img src = "./new-cat.png" width ="200" /> <img src = "./new-exp.png" width ="200" />
 
 # Additional Tools
   1. Rubocop
