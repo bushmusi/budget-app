@@ -1,0 +1,22 @@
+<a href="<%= category_path(item)%>" class="category-container">
+  <div class="category-left">
+    <div class="icon">
+      <span><i class="<%= item.icon %> fa-2x" style="color: #3778c2"></i></span>
+    </div>
+    <div class="title">
+      <span><%= item.name %></span>
+    </div>
+  </div>
+
+  <div class="category-right">
+    <div>
+      <p><strong>Name:</strong> <%= item.user.name %></p>
+    </div>
+    <div>
+      <p><strong>Expense:</strong> $<%= item.payments.sum(:amount) %></p>
+    </div>
+    <div>
+      <p>Created at: <i><%= item.created_at.strftime('%d %B %Y') %></i></p>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,8 @@
+
+<%= render 'layouts/navigation', title: "Category", path: nil%>
+<div class="category-list">
+  <% @categories.each do|item|  %>
+    <%= render 'layouts/category', item: item %>
+  <% end %>
+</div>
+<%= render 'layouts/footer', title: "Add new category", path: new_category_path %>

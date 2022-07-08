@@ -1,0 +1,29 @@
+<%= render 'layouts/navigation' , title: "New Payment", path: category_path(@category) %>
+
+<%= form_with model: @payment, url: create_payment_path, class: "card form-card" do |form| %>
+  <% if @payment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
+
+      <ul>
+        <% @payment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, required: true, class: 'form-control',
+                        placeholder: 'Please enter the name of this payment' %>
+    <%= form.label :amount %>
+    <input required="required" class="form-control" placeholder="Please enter the amount of this payment" type="number" min="0" name="payment[amount]" id="payment_amount">
+  </div>
+
+
+
+  <div>
+    <%= form.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>

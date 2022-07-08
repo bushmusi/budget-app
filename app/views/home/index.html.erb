@@ -1,0 +1,14 @@
+<style>
+  body {
+    background-color: white !important
+  }
+</style>
+<main class="splash-screen">
+  <div class="splash-msg">
+    <h1 class="app-title">Budget App</h1>
+  </div>
+  <div class="user-options">
+    <%= button_to "Login", new_user_session_path, :method => :get, class: "auth-btn login-btn" %>
+    <%= button_to "Register", new_user_registration_path, :method => :get, class: "auth-btn" %>
+  </div>
+</main>
