@@ -12,7 +12,7 @@ class PaymentsController < ApplicationController
     @payment.user = current_user
     respond_to do |format|
       if @payment.save
-        CategoryPayment.create(name: @payment.name, payment_id: @payment.id, category_id: @category.id)
+        CategoryPayment.create(payment_id: @payment.id, category_id: @category.id)
         format.html { redirect_to category_path(@category), notice: 'Expense added successfully' }
       else
         format.html { redirect_to category_path(@category), alert: @payment.errors }
