@@ -1,4 +1,4 @@
-<%= render 'layouts/navigation' , title: "New Category", path: "category_index_path" %>
+<%= render 'layouts/navigation' , title: "New Category", path: category_index_path %>
 
 <%= form_with model: @category, url: add_category_path, class: "card form-card" do |form| %>
   <% if @category.errors.any? %>
