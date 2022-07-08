@@ -9,7 +9,7 @@ Budget-App is about building a mobile web application where you can manage your 
 # Live Demo
   - [budget-app](https://bush-budget.herokuapp.com/)
 
-# Screenshot
+# Screenshots
   <img src = "./app.png" width ="200" /> <img src = "./app-expense.png" width ="200" /> <img src = "./new-cat.png" width ="200" /> <img src = "./new-exp.png" width ="200" />
 
 # Additional Tools
