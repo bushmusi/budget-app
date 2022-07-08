@@ -54,6 +54,17 @@ div.user-options {
   width: 90%;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
 button.auth-btn {
   height: 50px;
   width: 100%;
@@ -82,6 +93,7 @@ main.auth-form {
 
 input#user_email,
 input[type='submit'],
+input[type='text'],
 input#user_password_confirmation,
 input#user_password {
   padding: 10px;
